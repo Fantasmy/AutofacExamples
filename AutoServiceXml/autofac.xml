@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<autofac defaultAssembly="AutoServiceXml"> <!--compilacion-->
+  <components name="0">
+    <type>AutoService.BmwAutoService</type>
+    <injectProperties>true</injectProperties>
+    <!--dice las propuedades-->
+    <instanceScope>singleinstance</instanceScope>
+    <!--single instance-->
+  </components>
+  <components name="2">
+    <type>AutoService.HondaAutoService</type> <!--Aqui se pone namespace, toda la ruta de la clase-->
+    <injectProperties>true</injectProperties>
+    <!--dice las propuedades-->
+    <instanceScope>singleinstance</instanceScope>
+    <!--single instance-->
+  </components>
+  <components name="3">
+    <type>AutoService.FordAutoService</type>
+    <injectProperties>true</injectProperties>
+    <!--dice las propuedades-->
+    <instanceScope>singleinstance</instanceScope>
+    <!--single instance-->
+  </components>
+</autofac>
